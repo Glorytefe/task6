@@ -36,3 +36,88 @@ let collapse = document.getElementById('collapse');
     //         $('.navbar-collapse').toggleClass('collapse')
     //     })
     // })
+
+
+    // Animation
+    // var wow = new WOW(
+    //     {
+    //       boxClass:     'wow',      // animated element css class (default is wow)
+    //       animateClass: 'animated', // animation css class (default is animated)
+    //       offset:       0,          // distance to the element when triggering the animation (default is 0)
+    //       mobile:       true,       // trigger animations on mobile devices (default is true)
+    //       live:         true,       // act on asynchronously loaded content (default is true)
+    //       callback:     function(box) {
+    //         // the callback is fired every time an animation is started
+    //         // the argument that is passed in is the DOM node being animated
+    //       },
+    //       scrollContainer: null,    // optional scroll container selector, otherwise use window,
+    //       resetAnimation: true,     // reset animation on end (default is true)
+    //     }
+    //   );
+    //   wow.init();
+      
+
+
+    // typewriter effect
+    
+    const TypeWriter = function(txtElement, words, wait = 3000){
+        this.txtElement = txtElement;
+        this.words = words;
+        this.txt ='';
+        this.wordIndex = 0;
+        this.wait = parseInt(wait, 10);
+        this.type();
+        this.isDeleting = false();
+    }
+
+    // type method
+        TypeWriter.prototype.type = function(){
+            // console.log('Hello');
+            // current index
+            const current = this.wordIndex % this.words.length;
+
+            // get full text
+            const fulltxt = this.words[current];
+            
+            // check if deleting
+            if (this.isDeleting){
+                // remove char
+                this.txt = fulltxt.substring(0, this.txt.length - 1);
+            }
+            else {
+                // add char 
+                this.txt = fulltxt.substring(0, this.txt.length + 1);
+            }
+            // type speed
+            let typeSpeed = 100;
+            if (this.isDeleting) {
+                typeSpeed /= 2;
+            }
+            // ?if txt is complete
+            if (this.txt === fulltxt && !this.isDeleting){
+                //  pause
+                typeSpeed = this.wait;
+                // delete is set to true
+                this.isDeleting = true;
+            } else if ( this.isDeleting && this.txt === ''){
+                this.isDeleting =false;
+                this.wordIndex++;
+                // pause before start typing
+                typeSpeed = 100;
+            }
+            setTimeout(() => this.type(), 250);
+            // insert text
+            this.txtElement.innerHTML = `<span class='txt'>${this.txt}</span>`;
+        }
+
+
+    // on load
+    document.addEventListener('DOMContentLoaded', init);
+
+    function init(){
+        const txtElement = document.querySelector('.typing');
+        const words = JSON.parse(txtElement.getAttribute('data-words'));
+        const wait = txtElement.getAttribute('data-wait');
+        // typewriter
+        new TypeWriter(txtElement, words, wait);
+    }
