@@ -29,10 +29,15 @@ header{
     border-radius: 0!important;
     padding: 0.9rem;
 }
+.btn-toggle:hover{
+    animation: shake 2s;
+}
 .navbar-brand{
     display: inline;
 }
-
+img:hover{
+    animation: bounce 2s;
+}
 .nav-togglerbutton {
     display: inline;
     right: 0!important;
@@ -50,6 +55,7 @@ header{
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center!important;
 }
 
 .nav-item {
@@ -71,25 +77,37 @@ header{
     cursor: pointer;
     display: none;
 }
+.close:hover{
+    color: var(--second-color);
+}
 
 /* first block */
 .sec1{
     background-color: var(--main-bk-color);
     padding-bottom: 5rem;
     margin: 0!important;
-    padding: 2rem 3rem;
+    height: 100%;
+    padding: 6rem 3rem;
     /* transition: ease-in, 1s; */
     /* position: fixed; */
 }
-
+.carousel-inner1{
+    padding-bottom: 10rem;
+}
+.typing{
+    color: var(--second-color)!important;
+    font-size: 2rem!important;
+    font-weight: bolder;
+    line-height: 1.2px;
+}
 .carousel-text {
     width: 50%;
     display: inline-block;
     color: var(--body-fontcolor);
 }
-/* .t-h1 {
-    height: 150px;
-} */
+.t-h1 {
+    height: 150px!important;
+}
 .carousel-text span{
     margin-top: 2rem!important;
 }
@@ -235,7 +253,7 @@ border-bottom: 3px solid var(--second-color)!important;
 /* fourth block */
 
 .bk {
-    background: url(/images/bk-2.png);
+    /* background: url(/images/bk-2.png); */
     /* background-size: cover; */
 }
 .sec4 {
@@ -335,9 +353,16 @@ footer{
         font-size: 16px;
         padding: 10px;
     }
-    /* .t-h1 {
-        height: 280px;
-    } */
+    .t-h1 {
+        height: 90px!important;
+        font-size: 20px!important;
+    }
+    .typing{
+        /* font-size: 4%!important; */
+    }
+    .carousel-text span{
+        font-size: 16px!important;
+    }
     .carousel-text{
       width:100%;
       text-align: center;
@@ -382,7 +407,7 @@ footer{
     
     }
     #email{
-       max-width: 90%;
+       max-width: 80%;
     }
     .content-message {
         text-align: center;
@@ -429,12 +454,17 @@ footer{
         max-width: 60%!important;
         text-align: center!important;
         margin-top: -2rem!important;
+        /* animation: tada 4s infinite;
+        transition: ease-in 2s; */
     }
     /* .bk-col2 .col3 {
         display: flex!important;
     } */
     .bk-col2{
        display: none!important;
+    }
+    .btn-toggle:hover{
+        animation: none!important;
     }
 }
 /* media query for tablet */
@@ -458,12 +488,10 @@ footer{
     .img-a {
         max-width: 100%!important;
         padding: 0, auto!important;
-        /* display: block!important; */
     }
     #carousel-row2{
         max-width: 100%!important;
         text-align: center!important;
-        /* display: block!important; */
     }
     .content-message{
         width: 60%;
@@ -472,26 +500,18 @@ footer{
     }
     .bb {
         display: none;
-        /* padding-left: 10rem; */
-        /* max-width: 40%!important; */
-        /* padding: 0, auto!important; */
-        /* max-width: 60%!important;
-        margin: 0, auto!important; */
     }
     .container-content{
         padding: 0, auto!important;
         width: 100%!important;
-        /* margin: 0, 5rem!important; */
      }
      .l-text h4 {
         margin: 0!important;
         width: 100%;
     }
     .sec5{
-        /* padding: 0!important; */
-        /* text-align: center; */
+       
         width: 100%;
-        /* margin: 0; */
       }
       .img-b{
           max-width: 100%!important;
@@ -504,4 +524,7 @@ footer{
       .form-b #email{
           width: 70%;
       }
+      .btn-toggle:hover{
+        animation: none!important;
+    }
 }
