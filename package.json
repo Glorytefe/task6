@@ -1,0 +1,23 @@
+{
+  "name": "mylife",
+  "version": "1.0.0",
+  "description": "mylife app",
+  "main": "index.js",
+  "dependencies": {
+    "wowjs": "^1.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Glorytefe/task6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Glorytefe/task6/issues"
+  },
+  "homepage": "https://github.com/Glorytefe/task6#readme"
+}
