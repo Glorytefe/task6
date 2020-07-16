@@ -19,6 +19,7 @@ header{
     /* display: flex; */
     padding: 2rem;
     width: 100%;
+    outline: none!important;
 }
 
 .btn-toggle  {
@@ -59,7 +60,7 @@ img:hover{
 }
 
 .nav-item {
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .nav-item a {
@@ -112,9 +113,9 @@ img:hover{
     margin-top: 2rem!important;
 }
 /* Cursor */
-.typing > .txt {
+/* .typing > .txt {
     border-right: 0.2rem solid var(--body-fontcolor);
-  }
+  } */
 .carousel-text .text-s{
     line-height: 1.5px;
     letter-spacing: 1px;
@@ -354,11 +355,14 @@ footer{
         padding: 10px;
     }
     .t-h1 {
-        height: 90px!important;
-        font-size: 20px!important;
+        height: 140px!important;
+        /* margin-bottom: 3rem!important; */
+        /* max-width: 100%!important; */
+        font-size: 25px!important;
     }
-    .typing{
-        /* font-size: 4%!important; */
+
+    .typing .txt{
+        font-size: 1.5rem!important;
     }
     .carousel-text span{
         font-size: 16px!important;
@@ -388,26 +392,30 @@ footer{
         padding-top: 0.5rem!important;
     }
     .form{
-        padding: 20px!important;
+        padding: 0!important;
     }
     .form label{
         width: 100%!important;
-        font-size: 16px!important;
+        font-size: 12px!important;
     }
     #notify{
         position: absolute;
         /* float: right!important; */
         /* width: 106px!important; */
-        text-align: center;
+        /* text-align: center; */
         margin-left: -3.3rem!important;
         display: inline!important;
         padding: 0;
-        max-width: 30%;
-        margin: -0.6px;
+        font-size: 10px;
+        max-width: 20%;
+        /* margin: -0.6px; */
+        max-height: 40px;
     
     }
     #email{
-       max-width: 80%;
+       width: 88%;
+       font-size: 10px;
+       max-height: 40px;
     }
     .content-message {
         text-align: center;
@@ -478,6 +486,9 @@ footer{
         float: none!important;
         text-align: center;
         padding-top: 3%!important;
+    }
+    .typing .txt{
+        font-size: 2.5rem!important;
     }
 
     .form{

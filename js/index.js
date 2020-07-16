@@ -86,7 +86,8 @@ let collapse = document.getElementById('collapse');
             }
             setTimeout(() => this.type(), 250);
             // insert text
-            this.txtElement.innerHTML = `<span class='txt'>${this.txt}</span>`;
+            this.txtElement.innerHTML = `<span class='txt'>${this.txt}|</span>`;
+            // this.txt.style.fontSize = '50px'
         }
 
 
