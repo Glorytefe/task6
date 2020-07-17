@@ -33,7 +33,24 @@
 //         box.style.display='flex';
 //     });
 
-    
+    // let button = document.getElementById('notify');
+    // let message = document.getElementById('message');
+    // let closeMess = document.getElementById('close');
+    // let email = document.getElementById('email');
+
+    // button.addEventListener('click', function () {
+    //     if (!email.value == ''){
+    //         message.style.display='flex';
+    //     }else {
+    //         alert('enter your email')
+    //     }
+    // });
+
+    // closeMess.addEventListener('click', function(){
+    //     if (message.style.display = 'flex'){
+    //         message.style.display='none';
+    //     }
+    // })
       
 
 

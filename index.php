@@ -93,14 +93,14 @@
                               </div>
                               <div class="carousel-item">
                                 <div class="content-message">
-                                    <h5>Feel free to vent your frustrations or regrets about life issues and find listening ears</h5>
+                                    <h5>Help someone out, get support and advice from people like yourself</h5>
                                     <p >We all need a support system to help us get through difficult times. 
-                                        Because life can be full of challenges, and there may be times when we feel like giving up. </p>
+                                    Because life can be full of challenges, and there may be times when we feel like giving up.</p>
                                     </div>
                               </div>
                               <div class="carousel-item">
                                 <div class="content-message">
-                                    <h5>Feel free to vent your frustrations or regrets about life issues and find listening ears</h5>
+                                    <h5>Let’s build a voice together to fight for the voiceless </h5>
                                     <p>We all need a support system to help us get through difficult times. 
                                         Because life can be full of challenges, and there may be times when we feel like giving up. </p>
                                     </div>
@@ -127,8 +127,8 @@
                                 <img src="./images/grp3.png" alt="" class="img-responsive wow bounce">
                                 <div class="text-box text-center">
                                     <h4 class="wow tada"> It's a Safe Community</h4>
-                                    <p class="wow fadeInRight" data-wow-delay=".3s">Some quick example text to build on the card title 
-                                        and make up the bulk of the card's content. make up the bulk</p>
+                                    <p class="wow fadeInRight txt-p" data-wow-delay=".3s">We use the best data practices to keep myLife safe for you. 
+                                        You can be as vulnerable and honest without worrying about trolls or being bullyed </p>
                                 </div>
                             </div>
                     </div>
@@ -137,8 +137,8 @@
                             <img src="./images/grp2.png" alt="" class="img-responsive wow bounce ">
                             <div class="text-box text-center">
                                 <h4 class="wow jello">We embrace our Humanity</h4>
-                                <p class="wow fadeInRight" data-wow-delay=".4s">Some quick example text to build on the card title 
-                                    and make up the bulk of the card's content. make up the bulk</p>
+                                <p class="wow fadeInRight txt-p" data-wow-delay=".4s">We don’t judge. We celebrate each other’s flaws, because honestly, 
+                                    it’s what makes us human. We apply the principles of kindness and goodness</p>
                             </div>
                         </div>
                 </div>
@@ -146,9 +146,9 @@
                     <div class="container-content">
                         <img src="./images/grp1.png" alt="" class=" wow bounce">
                         <div class="text-box text-center">
-                            <h4 class="wow jello">We Provide Support </h4>
-                            <p class="wow fadeInRight" data-wow-delay=".6s">Some quick example text to build on the card title 
-                                and make up the bulk of the card's content. make up the bulk</p>
+                            <h4 class="wow jello ">We Provide Support </h4>
+                            <p class="wow fadeInRight txt-p" data-wow-delay=".6s">We believe in the power of empathy and being t
+                                here for each other through the bad times and the good times.</p>
                         </div>
                     </div>
             </div>
@@ -156,12 +156,12 @@
             </section>
             <section class="text-center sec3">
                 <div class="text-h3 wow flipInY "data-wow-delay=".1s">
-                    <h3 class="" >No matter your daily life experiences, this is a place your voice will be heard</h3>
+                    <h3 class="" >No matter your daily life experiences, <br>this is a place your voice will be heard</h3>
                 </div>
             </section>
             <section class="bk">
             <div class="content-sec4i wow flipInY" data-wow-delay="1s">
-                <p class="py-5">You can join the different categories or use respective hashtags 
+                <p class="py-5 sec4i-p">You can join the different categories or use respective hashtags 
                     to share your experience and connect </p>
                     <!-- <img src="/images/bk-2.png" class="img-responsive img-aa" alt=""> -->
             </div>
@@ -180,7 +180,7 @@
         <div class="row m-0">
             <div class="col-md-12 col-sm-12 col-lg-5 col-xl-5">
                 <div class="wow tada div1 " data-wow-delay="1.3s">
-                    <img src="./images/phone1.png" class="img-responsive img-b " alt="">
+                    <img src="./images/phone12.png" class="img-responsive img-b " alt="">
                 </div>
             <!-- <div class="bk-col bk-col2 col3"></div> -->
             </div>
@@ -193,6 +193,17 @@
                             <input type="submit" value="NOTIFY ME" id="notify" class="form-control" name="submit" >
                 </div>
             </form>
+            <div class="message" id="message">
+                
+                <div class="card">
+
+                    <div class="card-body text-center">
+                        <p>Thank You!,<br>You'll be the first to know when mylife gets launched</p>
+                        <button class="btn btn-close btn-dark" id="close">Close </button>
+                    </div>
+                </div>
+               
+            </div>
             </div>
         </div>
             
@@ -203,10 +214,10 @@
     </footer>
         </main>
         <script src="./js/index.js"></script>
-    <script src="/js/jquery.js"></script>
-    <script src="/js/popper.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/wow.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/wow.js"></script>
     <script>
     new WOW().init();
     </script>

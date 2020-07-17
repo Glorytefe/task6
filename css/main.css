@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 :root{
     --main-bk-color:#465D9C;
     --body-fontcolor: #fff;
@@ -6,6 +7,8 @@
     --sec-bkcolor:#E8EFFF;
     --p-font-color:#102954;
     --h-font-color: #222222;
+    --font-family:roboto;
+    --font-family1:Poppins;
 }
 
 body{
@@ -77,7 +80,7 @@ header{
 }
 .close {
     transform: rotate(45deg);
-    color: var(--body-fontcolor);
+    color: black;
     font-size: 40px;
     cursor: pointer;
     display: none;
@@ -100,42 +103,48 @@ header{
     padding-bottom: 10rem;
 }
 .typing{
-    color: var(--second-color)!important;
-    font-size: 2rem!important;
-    font-weight: bolder;
-    line-height: 1.2px;
+    color: #E8BF41!important;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
 }
 .carousel-text {
-    width: 50%;
+    width: 60%;
     display: inline-block;
     color: var(--body-fontcolor);
 }
 .t-h1 {
-    height: 150px!important;
+    height: 215px!important;
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 66px;
 }
 .carousel-text span{
     margin-top: 2rem!important;
+    
 }
 /* Cursor */
 /* .typing > .txt {
     border-right: 0.2rem solid var(--body-fontcolor);
   } */
 .carousel-text .text-s{
-    line-height: 1.5px;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: normal;
-    color: var(--body-fontcolor);
+font-size: 24px;
+line-height: 35px;
+letter-spacing: 1px;
+color: var(--body-fontcolor);
+font-family: roboto;
 }
 .form{
     width: 100%;
     
 }
 .form label {
-    line-height: 1.5;
-    letter-spacing: 1;
-    font-size: 18px;
     color: var(--body-fontcolor);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
 }
 .form-group{
     margin-top: 12%;
@@ -174,6 +183,7 @@ header{
 
 .content-message{
     /* width: 80%; */
+    text-align: center;
     padding-top: 2.5rem!important;
    
 }
@@ -183,26 +193,25 @@ header{
     font-weight: 500;
     line-height: 1.5;
     /* font-weight: normal; */
-    font-size: 24px;
+    font-size: 48px;
     padding-bottom: 1rem!important
+    /* font-style: normal; */
+
 }
 
 .content-message p{
     color: var(--p-font-color);
-    line-height: 1.5;
-    letter-spacing: 1;
-    /* width: 80%; */
     padding-bottom: 4rem!important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 35px;
 }
 .carousel-indicators li {
     border-radius: 50%!important; 
     width:20px!important; 
     height: 20px!important;
     text-align: center!important;
-    /* color: var(--body-fontcolor)!important; */
-    /* background-color: transparent; */
-    /* box-shadow: 10px 3px 5px #aaaaaa; */
-    /* margin-top: 4rem!important; */
 }
 
 .carousel-indicators li:hover{
@@ -215,14 +224,19 @@ header{
 height: 12px!important;
 margin: 0 2rem;
 padding-top: 20%!important;
-border-bottom: 3px solid var(--second-color)!important;
+border-bottom: 4px solid var(--second-color)!important;
 }
 
 .text-box {
     padding-top: 3rem!important;
-    /* text-align: justify!important; */
-    /* width: 80%; */
-    
+       
+}
+
+.txt-p{
+    font-family: var(--font-family1);
+    font-size: 16px;
+    line-height: 22px;
+    color:  #4F4F4F;
 }
 
 .container-content{
@@ -245,8 +259,11 @@ border-bottom: 3px solid var(--second-color)!important;
     background-color: #F6F8FF;
    
 }
-.text-h3{
+.text-h3 h3{
     /* padding: 0, 5rem!important; */
+    font-family: var(--font-family);
+    font-size: 40px;
+    line-height: 56px;
 }
 .sec3 h3{
     margin-top: 5rem!important;
@@ -258,17 +275,10 @@ border-bottom: 3px solid var(--second-color)!important;
 
 /* fourth block */
 
-.bk {
-    /* background: url(/images/bk-2.png); */
-    /* background-size: cover; */
-}
 .sec4 {
     width: 100%;
     overflow: hidden;
     position: relative;
-    /* left: -80px; */
-    /* right: 0; */
-    /* margin-top: 80px; */
     cursor: pointer;
 }
 
@@ -278,12 +288,16 @@ border-bottom: 3px solid var(--second-color)!important;
     font-size: 20px;
     color: #102954;;
     line-height: 1.2;
-    font: normal;
+}
+.sec4i-p{
+    font-family: var(--font-family);
+    font-size: 24px;
+    line-height: 35px;
 }
 
   .sec4 .scroll {
-    background-image: url(/images/all.png);
-    background-image: -webkit-image-set(url(/images/all.png) 1x, url(/images/all.png)2x);
+    background-image: url("../images/all.jpg");
+    background-image: -webkit-image-set(url("../images/all.jpg") 1x, url("../images/all.jpg")2x);
     background-size: auto 100%;
     width: 100%;
     background-repeat: repeat-x;
@@ -317,11 +331,13 @@ border-bottom: 3px solid var(--second-color)!important;
     padding-left: 1rem!important;
 }
 .l-text h4{
-    padding-top: 2rem!important;
-    padding-bottom: 3rem!important;
+    padding-top: 2.5rem!important;
+    padding-bottom: 3.5rem!important;
     margin-left: auto;
-    width: 30%;
+    width: 50%;
     text-align:center; 
+    font-size: 40px;
+    line-height: 47px;
 }
 
 /* block 5 */
@@ -342,7 +358,9 @@ border-bottom: 3px solid var(--second-color)!important;
 .col3 {
     display: none!important;
 }
-
+.message {
+    display: none;
+}
 /* footer */
 footer{
     background-color: var(--second-color);
@@ -360,24 +378,27 @@ footer{
         padding: 10px;
     }
     .t-h1 {
-        height: 140px!important;
-        /* margin-bottom: 3rem!important; */
-        /* max-width: 100%!important; */
-        font-size: 25px!important;
+        height: 120px!important;
+        font-size: 20px!important;
+        line-height: 35px!important;
     }
 
-    .typing .txt{
-        font-size: 1.5rem!important;
+    .typing .txt {
+        font-size: 20px!important;
+        /* line-height: 0!important; */
+    }
+    .typing{
+        line-height: 40px!important;
     }
     .carousel-text span{
-        font-size: 16px!important;
+        font-size: 14px!important;
     }
     .carousel-text{
       width:100%;
       text-align: center;
       padding-bottom: 1rem!important;
     }
-
+    
     .carousel{
         padding: 0 auto!important;
     }
@@ -427,7 +448,15 @@ footer{
         max-width: 100%;
         margin: 0, auto!important;
     }
-
+    .content-message h5 {
+        font-size: 20px!important;
+    }
+    .content-message p {
+        font-size: 16px!important;
+    }
+    .text-h3 h3, .sec4i-p {
+        font-size: 20px!important;
+    }
     .sec2{
         padding: 2rem!important;
     }
@@ -453,6 +482,7 @@ footer{
     .l-text h4 {
         margin: 0!important;
         width: 100%;
+        font-size: 20px!important;
     }
     .sec5{
       padding: 0!important;
@@ -492,10 +522,18 @@ footer{
         text-align: center;
         padding-top: 3%!important;
     }
-    .typing .txt{
-        font-size: 2.5rem!important;
+    .typing .txt, .t-h1{
+        font-size: 2.8rem!important;
     }
-
+    .content-message h5 {
+        font-size: 35px!important;
+    }
+    .content-message p {
+        font-size: 25px!important;
+    }
+    .sec4i-p {
+        font-size: 30px!important;
+    }
     .form{
         text-align: center!important;
         padding-bottom: 5rem!important;
