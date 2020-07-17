@@ -1,37 +1,37 @@
-let collapse = document.getElementById('collapse');
-    let button = document.getElementById('btn-toggle');
-    // let imgs =  document.getElementById('img')
-    let close = document.getElementById('close');
-    let box = document.getElementById('btn-togglea');
-    let section = document.getElementById('nav-item');
-    let content = document.getElementById('box-text')
+// let collapse = document.getElementById('collapse');
+//     let button = document.getElementById('btn-toggle');
+//     // let imgs =  document.getElementById('img')
+//     let close = document.getElementById('close');
+//     let box = document.getElementById('btn-togglea');
+//     let section = document.getElementById('nav-item');
+//     let content = document.getElementById('box-text')
 
-    button.addEventListener('click', function(){
-        if(collapse.style.display= 'none'){
-            // console.log('click')
-            collapse.classList.remove('d-none')
-            collapse.style.display='flex';
-            close.style.display='flex';
-            box.style.display='none';
+//     button.addEventListener('click', function(){
+//         if(collapse.style.display= 'none'){
+//             // console.log('click')
+//             collapse.classList.remove('d-none')
+//             collapse.style.display='flex';
+//             close.style.display='flex';
+//             box.style.display='none';
     
-        }
-    })
+//         }
+//     })
 
-    close.addEventListener('click', function(){
-        if (close.style.display='flex'){
-            collapse.classList.add('d-none')
-            collapse.style.display='none'
-            close.style.display='none';
-            box.style.display='flex';
+//     close.addEventListener('click', function(){
+//         if (close.style.display='flex'){
+//             collapse.classList.add('d-none')
+//             collapse.style.display='none'
+//             close.style.display='none';
+//             box.style.display='flex';
         
-        }
-    })
+//         }
+//     })
    
-    section.addEventListener('click', function(){
-        collapse.style.display='none'
-        close.style.display='none';
-        box.style.display='flex';
-    });
+//     section.addEventListener('click', function(){
+//         collapse.style.display='none'
+//         close.style.display='none';
+//         box.style.display='flex';
+//     });
 
     
       

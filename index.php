@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="icon" href="/images/logo.png">
-    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/animate.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"> -->
 
     <title>myLife</title>
@@ -16,12 +16,12 @@
         <nav>
             <div class="navbar-nav">
             <div class="navbar-brand">
-                <a href="" class="nav-1" ><img src="/images/Group 1122.png" class="img-responsive wow rollIn" alt=""></a>
+                <a href="" class="nav-1" ><img src="./images/Group 1122.png" class="img-responsive wow rollIn" alt=""></a>
                 <div class="nav nav-togglerbutton ml-auto">
                     <div class="close"  id="close">
                         +
                     </div>
-                    <a href="#" id="btn-toggle" class="wow rollIn" data-wow-delay=".5s">
+                    <a href="#notifym" id="btn-toggle" class="wow rollIn" data-wow-delay=".5s">
                     <button class="btn btn-toggle" id="btn-togglea">
                         NOTIFY ME
                     </button>
@@ -55,11 +55,11 @@
                             <!-- <p>Be the first to know when it gets launched</p> -->
                     </div>
                         <div class="img-container float-right wow bounceIn" data-wow-delay="1.5s">
-                            <img src="/images/1.png" class="img-responsive c-img " alt="">
+                            <img src="./images/1.png" class="img-responsive c-img " alt="">
                         </div>
-                <form action="" class="form">
+                <form action="email.php" method="POST" class="form">
                     
-                        <div class="form-group form-a">
+                        <div class="form-group form-a" id="notifym">
                                 <label for="">Be the first to know when it gets launched</label><br>
                                 <input type="email" id="email" placeholder="Enter your email.." name="email" class="form-control"
                                 style="">
@@ -72,7 +72,7 @@
                 <div class="row row1" id="share">
                     <div class="col-md-12 col-lg-5 col-xl-5 col-sm-12">
                         <div class="img-container img-a wow fadeInRight" data-wow-delay=".6s">
-                            <img src="/images/image 7.png" class="b-img" alt="">
+                            <img src="./images/image 7.png" class="b-img" alt="">
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-7 col-xl-7 col-sm-12 container" id="carousel-row2">
@@ -124,7 +124,7 @@
                 <div class="row row2 text-center" id="ser">
                     <div class="col-md-12 col-lg-4 col-xl-4 col-sm-12">
                             <div class="container-content">
-                                <img src="/images/grp3.png" alt="" class="img-responsive wow bounce">
+                                <img src="./images/grp3.png" alt="" class="img-responsive wow bounce">
                                 <div class="text-box text-center">
                                     <h4 class="wow tada"> It's a Safe Community</h4>
                                     <p class="wow fadeInRight" data-wow-delay=".3s">Some quick example text to build on the card title 
@@ -134,7 +134,7 @@
                     </div>
                     <div class="col-md-12 col-lg-4 col-xl-4 col-sm-12">
                         <div class="container-content">
-                            <img src="/images/grp2.png" alt="" class="img-responsive wow bounce ">
+                            <img src="./images/grp2.png" alt="" class="img-responsive wow bounce ">
                             <div class="text-box text-center">
                                 <h4 class="wow jello">We embrace our Humanity</h4>
                                 <p class="wow fadeInRight" data-wow-delay=".4s">Some quick example text to build on the card title 
@@ -144,7 +144,7 @@
                 </div>
                 <div class="col-md-12 col-lg-4 col-xl-4 col-sm-12">
                     <div class="container-content">
-                        <img src="/images/grp1.png" alt="" class=" wow bounce">
+                        <img src="./images/grp1.png" alt="" class=" wow bounce">
                         <div class="text-box text-center">
                             <h4 class="wow jello">We Provide Support </h4>
                             <p class="wow fadeInRight" data-wow-delay=".6s">Some quick example text to build on the card title 
@@ -180,12 +180,12 @@
         <div class="row m-0">
             <div class="col-md-12 col-sm-12 col-lg-5 col-xl-5">
                 <div class="wow tada div1 " data-wow-delay="1.3s">
-                    <img src="/images/phone1.png" class="img-responsive img-b " alt="">
+                    <img src="./images/phone1.png" class="img-responsive img-b " alt="">
                 </div>
             <!-- <div class="bk-col bk-col2 col3"></div> -->
             </div>
             <div class="col-md-12 col-sm-12 col-lg-7 col-xl-7 ">
-                <form action="" class="form">
+                <form action="email.php" method="POST" class="form">
                     <div class="form-group form-a form-b " >
                             <label for="">Be the first to know when it gets launched</label><br>
                             <input type="email" id="email" placeholder="Enter your email.." name="email" class="form-control"
